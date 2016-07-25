@@ -17,14 +17,20 @@ Some important and handy git commands
 ```
 
 
-#### Delete a branch <branch_name>
+#### Delete a local branch <local_branch_name>
 ```sh
- git branch -D <branch_name>
+ git branch -D <local_branch_name>
 ```
 
 #### Reset current branch to destination branch
 ```sh
  git reset --hard <destination_branch_name>
+```
+
+#### cherry-pick commit `commit-hash` into current branch
+puts the commit `commit-hash` on top of your current branch
+```sh
+ git cherry-pick 'commit-hash'
 ```
 
 #### UnCommit `n` commits in current branch
@@ -35,4 +41,13 @@ Some important and handy git commands
 #### UnCommit everything in current branch with respect to another branch <branch_name>
 ```sh
  git reset --mixed <branch_name>
+```
+
+#### Delete remote branch <remote_branch_name>
+```sh
+ git push origin --delete <remote_branch_name>
+```
+######or
+```sh
+ git push origin :<remote_branch_name>
 ```
