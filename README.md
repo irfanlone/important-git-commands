@@ -58,3 +58,13 @@ git checkout -b <branch>
 git push -u origin <branch>
 ```
 
+#### Set up git push behaviour
+```sh
+git config --global push.default <option>
+
+options:
+tracking : Push the current branch to whatever it is tracking (Preffered)
+nothing  : Do not push anything
+matching : Push all matching branches (default)
+current  : Push the current branch
+```
