@@ -51,3 +51,10 @@ puts the commit `commit-hash` on top of your current branch
 ```sh
  git push origin :<remote_branch_name>
 ```
+
+#### Create local and remote tracking branch
+```sh
+git checkout -b <branch>
+git push -u origin <branch>
+```
+
